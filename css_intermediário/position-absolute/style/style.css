@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(170, 157, 157);
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado-red { 
+    position: absolute;
+    right: 0;
+    background-color: red;
+}
+
+.quadrado-blue {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    background-color: blue;
+}
+
+.quadrado-green {
+    position: absolute;
+    left: 0px;
+    background-color: green;
+}
+
+.quadrado-yellow {
+    position: absolute;
+    bottom: 0;
+    background-color: yellow;
+}
+
+.quadrado-gray {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: gray;
+}
+
+
+
+#quadro {
+    margin: auto;
+    position: relative;
+    background-color: aquamarine;
+    max-width: 500px;
+    height: 300px;
+    border: 1px dashed black;
+}

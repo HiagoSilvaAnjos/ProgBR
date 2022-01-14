@@ -1,0 +1,31 @@
+.card {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 200px;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.content1 {
+    
+    line-height: 200px;
+}
+
+.content2 {
+    
+    
+    top: 50%;
+    left: 50%;
+    position: absolute;
+
+    transform: translate(-50%, -50%)
+}
+
+.card2 {
+    float: left;
+    clear: left;
+    
+    border: 2px solid #000000;
+    padding: 100px 162px;
+} 

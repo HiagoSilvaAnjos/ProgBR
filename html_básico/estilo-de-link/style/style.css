@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    text-decoration: none;
+    color: red;
+    
+}
+
+.links:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: underline;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
+#bottom {
+    
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+#bottom:visited {
+    color: rgb(0, 0, 0);
+}
+
+#bottom:hover {
+    background-color: aquamarine;
+    color: rgb(255, 15, 115);
+    padding: 10px;
+    text-decoration: underline;
+    border-radius: 5px;
+} 
+
+#bottom:active {
+    color: red;
+    background-color: green;
+    border-radius: 10px;
+}
+

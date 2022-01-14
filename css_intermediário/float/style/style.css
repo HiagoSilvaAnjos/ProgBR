@@ -1,0 +1,14 @@
+body, html {
+    background-color: rgb(24, 24, 24);
+}
+
+li {
+    float: right;
+    padding: 10px;
+    background-color: gray;
+    margin: 5px;
+}
+
+ul {
+    list-style: none;
+}

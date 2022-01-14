@@ -1,0 +1,38 @@
+body {
+    font-size: 1.2rem;
+}
+
+.blue {
+    background-color: blue;
+}
+
+#red {
+    background-color: red;
+}
+
+#div_dentro {
+    background-color: red;
+    width: 500px;
+    height: 100px;
+}
+
+span {
+    display: inline-block;
+    background-color: green;
+    width: 500px;
+}
+
+.margin {
+    margin: 0;
+}
+
+img {
+    visibility: hidden;
+    width: 150px;
+}
+
+#inline {
+    background-color: red;
+    display: inline-block;
+    
+}

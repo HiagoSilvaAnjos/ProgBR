@@ -1,0 +1,14 @@
+#container {
+    background-color: aquamarine;
+    color: red;
+    width: 300px;
+    height: 100px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+img {
+    width: 2500px;
+}

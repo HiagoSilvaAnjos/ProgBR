@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -110%);
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+.quadrado-red { 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: red;
+}
+
+.quadrado-blue {
+   
+    background-color: blue;
+}
+
+.quadrado-green {
+    background-color: green;
+}
+
+
+#quadro {
+    max-width: 500px;
+    height: 4000px;
+    border: 1px solid black;
+}
