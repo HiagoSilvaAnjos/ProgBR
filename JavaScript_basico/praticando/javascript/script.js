@@ -71,13 +71,9 @@ function calcMedia(array1, array2) {
 
     var conceito = "";
 
-    if (media >= 10 && media <= 20) {
+    if (media >= 20) {
 
         conceito = "Passou";
-
-    } else if (media > 20) {
-
-        alert("Houver algun erro");
 
     }
     else {
