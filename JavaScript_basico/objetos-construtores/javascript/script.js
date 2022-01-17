@@ -7,25 +7,26 @@ function aluno(nome, n1, n2) {
         return (this.nota1 + this.nota2) / 2;
     }
 
-
-    if (this.media() >= 9 && this.media() <= 10) {
-        var conceito = "Parabens " + this.nome + " você foi Excelente"
+    this.seuConceito = function () {
+        if (this.media() >= 9 && this.media() <= 10) {
+            var conceito = "Parabens " + this.nome + " você foi Excelente"
+        }
+        else if (this.media() >= 7 && this.media() < 9) {
+            conceito = "Boa " + this.nome + " você foi Ótimo"
+        }
+        else if (this.media() >= 5 && this.media() < 7) {
+            conceito = this.nome + " você foi bem mais poderia ter sido melhor"
+        }
+        else {
+            conceito = this.nome + " Você foi ruim deveria ter estudado mais!"
+        }
+        return conceito
     }
-    else if (this.media() >= 7 && this.media() < 9) {
-        conceito = "Boa " + this.nome + " você foi Ótimo"
-    }
-    else if (this.media() >= 5 && this.media() < 7) {
-        conceito = this.nome + " você foi bem mais poderia ter sido melhor"
-    }
-    else {
-        conceito = this.nome + " Você foi ruim deveria ter estudado mais!"
-    }
-
 
     console.log(this.nome +
         ":\n"
         +
-        conceito
+        this.seuConceito()
         +
         "\n"
         +
@@ -73,23 +74,27 @@ function criarAluno(nome, nota1, nota2) {
         }
     };
 
-    if (aluno.media() >= 9 && aluno.media() <= 10) {
-        var conceito = "Parabens " + aluno.seuNome + " você foi Excelente"
+    function seuConceito() {
+        if (aluno.media() >= 9 && aluno.media() <= 10) {
+            var conceito = "Parabens " + aluno.seuNome + " você foi Excelente"
+        }
+        else if (aluno.media() >= 7 && aluno.media() < 9) {
+            conceito = "Boa " + aluno.seuNome + " você foi Ótimo"
+        }
+        else if (aluno.media() >= 5 && aluno.media() < 7) {
+            conceito = aluno.seuNome + " você foi bem mais poderia ter sido melhor"
+        }
+        else {
+            conceito = aluno.seuNome + " Você foi ruim deveria ter estudado mais!"
+        }
+        return conceito
     }
-    else if (aluno.media() >= 7 && aluno.media() < 9) {
-        conceito = "Boa " + aluno.seuNome + " você foi Ótimo"
-    }
-    else if (aluno.media() >= 5 && aluno.media() < 7) {
-        conceito = aluno.seuNome + " você foi bem mais poderia ter sido melhor"
-    }
-    else {
-        conceito = aluno.seuNome + " Você foi ruim deveria ter estudado mais!"
-    }
+
 
     console.log(aluno.seuNome +
         ":\n"
         +
-        conceito
+        seuConceito()
         +
         "\n"
         +
