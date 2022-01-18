@@ -38,9 +38,7 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da manhã" +
-            ", do dia " +
-            data.getDay() +
-            " de " +
+            " do mês de " +
             meses[data.getMonth()] +
             " de " +
             data.getFullYear() +
@@ -54,9 +52,7 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da tarde" +
-            ", do dia " +
-            data.getDay() +
-            " de " +
+            " do mês de " +
             meses[data.getMonth()] +
             " de " +
             data.getFullYear() +
@@ -70,9 +66,7 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da noite" +
-            ", do dia " +
-            data.getDay() +
-            " de " +
+            " do mês de " +
             meses[data.getMonth()] +
             " de " +
             data.getFullYear() +
@@ -86,9 +80,7 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da madrugada" +
-            ", do dia " +
-            data.getDay() +
-            " de " +
+            " do mês de " +
             meses[data.getMonth()] +
             " de " +
             data.getFullYear() +
