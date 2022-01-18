@@ -1,6 +1,6 @@
 // Ver data atual
 
-console.log("Criei este exemplo para praticar");
+console.log("Criei este exemplo para praticar\nDia 0 é domingo, dia 1 é segunda, dia 2 é terça, dia 3 é quarta, dia 4 é quinta, dia 5 é sexta e dia 6 é sábado");
 let data = new Date();
 
 let dias = [
@@ -27,6 +27,8 @@ let meses = [
     "novembro",
     "dezembro",
 ];
+
+
 
 function verHora() {
     if (data.getHours() >= 6 && data.getHours() <= 12) {
