@@ -48,7 +48,7 @@ function aluno(nome, n1, n2) {
 }
 
 
-var alunos = [
+let alunos = [
     new aluno("Hiago", 10, 10),
     new aluno("Igor", 8, 9),
     new aluno("Maria", 6, 7),
@@ -65,7 +65,7 @@ console.log("");
 
 // Mesma funcionalidade porem com códigos diferentes:
 function criarAluno(nome, nota1, nota2) {
-    var aluno = {
+    let aluno = {
         seuNome: nome,
         primeiraNota: nota1,
         segundaNota: nota2,
@@ -117,7 +117,7 @@ function criarAluno(nome, nota1, nota2) {
 };
 
 
-var turma = [
+let turma = [
     criarAluno("Hiago", 10, 10),
     criarAluno("Igor", 8, 9),
     criarAluno("João", 6, 7),

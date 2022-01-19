@@ -3,7 +3,7 @@ console.log("&& e")
 // && e (ele compara dois valores booleanos, se ambos forem verdadeiro ele retorna true e qualquer coisa diferente disso ele retorna false.)
 // Exemplo:
 
-var idade = 35;
+var idade = 20;
 var maior20 = idade >= 20;
 var menor30 = idade <= 30;
 var entre = maior20 && menor30; // Aqui ele vai comparar as variáveis! Se ambas forem verdadeiras ele deve retornar true e se uma ou as duas forem falsas ele retorna false.
@@ -15,6 +15,36 @@ console.log("Sua idade é maior ou igual a Vinte?", maior20);
 console.log("Sua idade é menor ou igual a Trinta?", menor30);
 
 console.log("Sua idade está entre 20 e 30?", entre);
+
+
+console.log("");
+// MESMO EXEMPLO ACIMA MAIS AGORA UTILIZANDO FUNÇÃO E CONDICIONAIS
+console.log("MESMO EXEMPLO ACIMA MAIS AGORA UTILIZANDO FUNÇÃO E CONDICIONAIS");
+
+function calcIdade (idade) {
+    this.suaIdade = idade;
+
+    console.log("Idade:", this.suaIdade, "anos");
+
+    if (this.suaIdade >= 20) {
+        console.log("Sua idade é maior ou igual a Vinte!");
+    } else if (this.suaIdade <= 30) {
+        console.log("Sua idade é menor ou igual a 30!"); 
+    } else {
+        console.log("ERROR");
+    }
+
+    console.log("Sua idade está entre 20 e 30 anos? " + (this.suaIdade >= 20 && this.suaIdade <= 30 ? "Sim!" : "Não!"));
+
+    return calcIdade;
+}
+
+calcIdade(50);
+
+
+console.log("");
+
+
 
 
 console.log("|| ou")
@@ -37,6 +67,32 @@ console.log("Idade menor ou igual a 10", menor10);
 console.log("Tem direito a gratuidade?", gratuidade);
 
 
+console.log("");
+// MESMO EXEMPLO ACIMA MAIS AGORA UTILIZANDO FUNÇÃO E CONDICIONAIS
+console.log("MESMO EXEMPLO ACIMA MAIS AGORA UTILIZANDO FUNÇÃO E CONDICIONAIS");
+
+function verificarIgualdade(idade) {
+    let suaIdade = idade
+
+    console.log("Sua idade:", suaIdade, "anos");
+
+    if (suaIdade <= 10) {
+        console.log("Sua idade é menor ou igual a 10!");
+    } else if (suaIdade > 10) {
+        console.log("Sua idade é maior que 10!");
+    } else {
+        console.log("ERROR");
+    }
+
+    suaIdade <= 10 ? console.log("Tem direito a gratuidade") : console.log("Não tem direito a gratuidade");
+}
+
+verificarIgualdade(10);
+
+
+
+
+console.log("");
 console.log("! negação")
 // Negativo (Só é aplicado à variáveis do tipo booleano e sempre que um valor for verdadeiro o outro passa a ser falso e vice-versa)
 
