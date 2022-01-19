@@ -1,53 +1,69 @@
-// function comerPizza(numeroDefatias) {
-//     for (fatiasComidas = 0; fatiasComidas <= numeroDefatias; fatiasComidas++) {
 
-//         console.log("Você comeu " + fatiasComidas + " fatias" + "\nRestam " + (numeroDefatias - fatiasComidas) + " fatias")
+// Meu exemplo 
+// Uma função que come determinados pedaços de pizza
+console.log("Uma função que come determinados pedaços de pizza");
 
-//     }
+function comerPizza(numeroDefatias) {
+    for (fatiasComidas = 0; fatiasComidas <= numeroDefatias; fatiasComidas++) {
 
-//     console.log("Você comeu toda a pizza!")
-// }
+        console.log("Você comeu " + fatiasComidas + " fatias" + "\nRestam " + (numeroDefatias - fatiasComidas) + " fatias")
 
+    }
 
-// comerPizza(10);
-
-// function comerPizza(numeroDefatias, fatiasComidas) {
-
-//     var tamanhoPizza = numeroDefatias;
-//     var fatiaComsumida = fatiasComidas;
-
-//     while (fatiaComsumida <= tamanhoPizza) {
-
-//         console.log("Você comeu " + fatiaComsumida + " fatias" + "\nRestam " + (tamanhoPizza - fatiaComsumida) + " fatias");
-//         fatiaComsumida++;
-
-//     }
-//     console.log("Você comeu toda a pizza!");
-
-// }
-
-// comerPizza(10, 0);
+    console.log("Você comeu toda a pizza!")
+}
 
 
-// function media(n1, n2) {
-//     var nota1 = n1; 
-//     var nota2 = n2;
-//     var media = (nota1 + nota2) / 2;
+comerPizza(10);
 
-//     return media;
-// }
+// Mesma função agora utilizando o for
+console.log("");
+console.log("Mesma função agora utilizando o for")
 
-// var resultado1 = media(6, 7);
-// var resultado2 = media(8, 7);
+function comerPizza2(numeroDefatias, fatiasComidas) {
 
-// console.log(resultado1 + " E " + resultado2);
+    var tamanhoPizza = numeroDefatias;
+    var fatiaComsumida = fatiasComidas;
+
+    while (fatiaComsumida <= tamanhoPizza) {
+
+        console.log("Você comeu " + fatiaComsumida + " fatias" + "\nRestam " + (tamanhoPizza - fatiaComsumida) + " fatias");
+        fatiaComsumida++;
+
+    }
+    console.log("Você comeu toda a pizza!");
+
+}
+
+comerPizza2(10, 0);
 
 
-// function media(n1, n2){
+
+// Exemplo feito na aula
+console.log("");
+console.log("Exemplo feito na aula");
+
+function media(n1, n2) {
+    var nota1 = n1; 
+    var nota2 = n2;
+    var media = (nota1 + nota2) / 2;
+
+    return media;
+}
+
+var resultado1 = media(6, 7);
+var resultado2 = media(8, 7);
+
+console.log(resultado1 + " E " + resultado2);
+
+
+// Peguei o mesmo exemplo da aula mais agora adicionei o prompt e o alert
+
+// function calcMedia(n1, n2){
 //     var nota1= n1
 //     var nota2= n2
 //     var media= (nota1 + nota2)/2
-//     alert("Sua média é "+ media)
+//     alert("Sua média é "+ media.toFixed(1))
     
 //     if (media >= 9) {
 //             alert("Parabens, você foi ótimo!")
@@ -61,7 +77,7 @@
     
 //     }
     
-//     media(
+//     calcMedia(
 //     parseInt(prompt("Digite sua 1ª nota!")),
 //     parseInt(prompt("Digite sua 2ª nota!"))
 //     )

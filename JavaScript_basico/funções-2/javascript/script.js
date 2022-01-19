@@ -13,28 +13,34 @@
 // var executar = s();
 // console.log(executar);
 
+console.log("Exemplo 1 função");
+console.log("");
 
-// function media(n1, n2) {
-//     var nota1 = n1;
-//     var nota2 = n2;
-//     var teste = (nota1 + nota2) / 2;
+function calcMedia(n1, n2) {
+    let nota1 = n1;
+    let nota2 = n2;
+    let media = (nota1 + nota2) / 2;
 
-//     // console.log("Sua média foi " + media);
-//     return teste;
-// }
+    console.log("Sua média foi " + media);
+    return media;
+}
 
-// var resultado = media(9, 7);
+let seuResultado = calcMedia(9, 7);
 
-// console.log(resultado);
+console.log(seuResultado);
 
+console.log("");
+console.log("Exemplo 2 função(arrow function)");
+console.log("");
 
-// var media = (n1, n2) => {
-//     return (n1 + n2) / 2;
-// }
+let media = (n1, n2) => {
+    return (n1 + n2) / 2;
+    
+}
 
-// var resultado = media(10, 10);
+let resultado = media(10, 10);
 
-// console.log(resultado);
+console.log(resultado);
 
 
 
