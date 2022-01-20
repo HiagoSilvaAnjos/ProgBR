@@ -72,11 +72,8 @@ function calcMedia(array1, array2) {
     var conceito = "";
 
     if (media >= 20) {
-
         conceito = "Passou";
-
-    }
-    else {
+    } else {
         conceito = "REPROVOU";
     }
 
@@ -84,18 +81,16 @@ function calcMedia(array1, array2) {
 
     switch (conceito) {
         case "Passou":
-            alert("Conseguiu passar, parabens")
+            alert("Conseguiu passar, parabens");
             break;
 
         case "REPROVOU":
-            alert("Que pena... tente novamente ano que vem")
+            alert("Que pena... tente novamente ano que vem");
             break;
 
         default:
-            alert("Algo de errado não está certo!")
+            alert("Algo de errado não está certo!");
     }
-
-
 }
 
 // Executar função e torcer para funcionar
