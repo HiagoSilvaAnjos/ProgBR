@@ -4,35 +4,39 @@
 console.log("Uma função que come determinados pedaços de pizza");
 
 function comerPizza(numeroDefatias) {
-    for (fatiasComidas = 0; fatiasComidas <= numeroDefatias; fatiasComidas++) {
+    for (var fatiasComidas = 0; fatiasComidas <= numeroDefatias; fatiasComidas++) {
 
         console.log("Você comeu " + fatiasComidas + " fatias" + "\nRestam " + (numeroDefatias - fatiasComidas) + " fatias")
 
     }
 
-    console.log("Você comeu toda a pizza!")
+    console.log("Você comeu toda a pizza!");
+
+    return fatiasComidas;
 }
 
 
-comerPizza(10);
+comerPizza(5);
 
-// Mesma função agora utilizando o for
+
+// Mesma função agora utilizando o while
 console.log("");
-console.log("Mesma função agora utilizando o for")
+console.log("Mesma função agora utilizando o while")
 
 function comerPizza2(numeroDefatias, fatiasComidas) {
 
     var tamanhoPizza = numeroDefatias;
     var fatiaComsumida = fatiasComidas;
 
-    while (fatiaComsumida <= tamanhoPizza) {
+    console.log("Sua pizza tem: " + tamanhoPizza + " fatias");
 
+    while (fatiaComsumida <= tamanhoPizza) {
+        
         console.log("Você comeu " + fatiaComsumida + " fatias" + "\nRestam " + (tamanhoPizza - fatiaComsumida) + " fatias");
         fatiaComsumida++;
 
     }
     console.log("Você comeu toda a pizza!");
-
 }
 
 comerPizza2(10, 0);
