@@ -16,11 +16,8 @@ function verificarMedia(n1, n2, n3, n4) {
 // Dizer se ele foi aprovado ou não
 
 function passou(saberResultado) {
-    if (saberResultado >= 5) {
-        return "Aprovado";
-    } else {
-        return "Reprovado";
-    }
+
+    return saberResultado >= 5 ? "Aprovado" : "Reprovado";
 }
 
 for (var index in nomes) {
