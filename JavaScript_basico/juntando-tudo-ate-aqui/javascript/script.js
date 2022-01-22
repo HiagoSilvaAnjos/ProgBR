@@ -51,6 +51,7 @@ console.log("");
 console.log("MESMO EXEMPLO BAIXO MAIS AGORA FEITO COM UM CÓDIGO DIFERENTE");
 
 console.log("A seguir veja suas notas nas seguntes matérias! (Se sua média for menor que 5 você será reprovado!)");
+var nomes = ["Igor", "Hiago", "Lais", "José", "Mari"];
 var materias = ["Matemática", "Portugues", "Quimica", "Física", "Geografia"]
 var notaA = [10, 9, 7, 6, 4];
 var notaB = [10, 9, 8, 6, 4];
@@ -185,6 +186,12 @@ var turma = [
     new novoAluno("Hiago", 3, 10, 10, 10),
     new novoAluno("Igor", 3, 10, 10, 10),
 ];
+
+
+
+
+
+
 
 
 
