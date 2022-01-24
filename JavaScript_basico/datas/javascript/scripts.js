@@ -1,8 +1,5 @@
 // Ver data atual
 
-console.log("Criei este exemplo para praticar\nDia 0 é domingo, dia 1 é segunda, dia 2 é terça, dia 3 é quarta, dia 4 é quinta, dia 5 é sexta e dia 6 é sábado");
-
-
 let dias = [
     "Domingo",
     "Segunda",
@@ -41,6 +38,8 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da manhã" +
+            "do dia " +
+            data.getUTCDate() +
             " do mês de " +
             meses[data.getMonth()] +
             " de " +
@@ -54,12 +53,14 @@ function verHora() {
             data.getHours() +
             ":" +
             data.getMinutes() +
-            " da tarde" +
+            " da tarde," +
+            " do dia " +
+            data.getUTCDate() +
             " do mês de " +
             meses[data.getMonth()] +
             " de " +
             data.getFullYear() +
-            " e hoje é " +
+            ", e hoje é " +
             dias[data.getDay()]
         );
     } else if (data.getHours() >= 18 && data.getHours() <= 23) {
@@ -69,6 +70,8 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da noite" +
+            "do dia " +
+            data.getUTCDate() +
             " do mês de " +
             meses[data.getMonth()] +
             " de " +
@@ -83,6 +86,8 @@ function verHora() {
             ":" +
             data.getMinutes() +
             " da madrugada" +
+            " do dia " +
+            data.getUTCDate() +
             " do mês de " +
             meses[data.getMonth()] +
             " de " +
