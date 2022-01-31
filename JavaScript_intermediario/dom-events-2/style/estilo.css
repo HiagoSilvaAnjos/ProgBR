@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#container {
+    background-color: #4b5266;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#image {
+    display: block;
+}
+
+img {   
+    text-align: center;
+    width: 200px;
+    border-radius: 2px;
+}
+
+
+
+button {
+    display: block;
+    padding: 10px;
+    background-color: crimson;
+    border: none;
+    color: #ffffff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* button:hover {
+    background-color: rgb(117, 8, 30);
+} */
