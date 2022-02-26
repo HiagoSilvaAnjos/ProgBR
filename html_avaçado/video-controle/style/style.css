@@ -6,19 +6,41 @@
 
 body {
     background-color: darkslategrey;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.video-container {
+    position: relative;
+    width: 800px;
+    height: 450px;
+}
+
+video {
+    width: 100%;
 }
 
 .players-container {
-    margin: 0 auto;
-    width: 600px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    position: relative;
+    top: 100%;
+    transform: translateY(-12%);
 }
 
 i {
     cursor: pointer;
-    background-color: rgb(255, 255, 255, 0.15);
+    margin: 0 20px 0;
     font-size: 50px;
     font-style: normal;
     border-radius: 5px;

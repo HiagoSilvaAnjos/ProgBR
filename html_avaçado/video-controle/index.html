@@ -15,30 +15,50 @@
 
 <body>
 
-    <div class="players-container">
-        <span class="material-icons">
-            <i>forward_10</i>
-        </span>
-        <span class="material-icons">
-            <i>replay_10</i>
-        </span>
-        <span class="material-icons">
-            <i>play_circle_outline</i>
-        </span>
-        <span class="material-icons">
-            <i>pause</i>
-        </span>
-        <span class="material-icons">
-            <i>volume_up</i>
-        </span>
-        <!-- <span class="material-icons">
-            <i>volume_down</i>
-        </span> -->
-        <!-- <span class="material-icons">
-            <i>volume_off</i>
-        </span> -->
-        <i class='bx bx-fullscreen'></i>
+    <div class="video-container">
+        <video id="video" src="./video/gerador-senha.mp4"></video>
+
+        <div class="players-container">
+            <span class="material-icons">
+                <i onclick="play()">play_circle_outline</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="pause()">pause</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="retroceder()">replay_10</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="avancar()">forward_10</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="diminuir()">fast_rewind</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="aumentar()">fast_forward</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="parar()">stop</i>
+            </span>
+            <span class="material-icons">
+                <i onclick="reiniciar()">replay</i>
+            </span>
+            <!-- <span class="material-icons">
+                <i>volume_up</i>
+            </span> -->
+            <!-- <span class="material-icons">
+                <i>volume_down</i>
+            </span> -->
+            <!-- <span class="material-icons">
+                <i>volume_off</i>
+            </span> -->
+            <span>
+                <i onclick="telaCheia()" class='bx bx-fullscreen'></i>
+            </span>
+        </div>
     </div>
+
+
 
     <script src="./javascript/script.js"></script>
 </body>
