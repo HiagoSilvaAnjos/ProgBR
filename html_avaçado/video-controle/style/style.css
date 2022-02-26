@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+.players-container {
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+i {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255, 0.15);
+    font-size: 50px;
+    font-style: normal;
+    border-radius: 5px;
+    color: rgb(207, 207, 207);
+}
