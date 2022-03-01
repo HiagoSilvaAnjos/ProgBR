@@ -1,0 +1,22 @@
+.container {
+    background-color: cadetblue;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+}
+
+#player2 {
+    position: absolute;
+    background-color: green;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
