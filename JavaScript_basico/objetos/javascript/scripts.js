@@ -33,13 +33,13 @@ console.log("Nome: " + progBr.nome
     "(ou 50 não sei)");
 
 
-for (var index in progBr[novaPropriedade]) {
+for (var index of progBr[novaPropriedade]) {
     console.log("O "
         +
         progBr.nome
         +
         " Ensina "
         +
-        progBr[novaPropriedade][index]);
+        index);
 }
 
