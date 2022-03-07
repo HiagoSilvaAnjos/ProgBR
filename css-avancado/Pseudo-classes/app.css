@@ -1,0 +1,78 @@
+/* Ao dar foco no input */
+input:focus {
+    color: red;
+    background: gray;
+}
+
+
+/* Primeiro filho de um elemento */
+#ul > li:first-child {
+    color: #fff;
+    padding: 10px;
+    background-color: blue;
+    width: 45px;
+    list-style: none;
+}
+
+/* Pega o primeiro elemento do mesmo tipo*/
+#outra-ul > li:first-of-type {
+    background: darkgrey;
+    color: red;
+}
+
+/* 
+ O seletor corresponde a cada elemento que é o enésimo filho, independentemente do tipo, de seu pai.:nth-child(n)
+
+ n pode ser um número, uma palavra-chave ou uma fórmula.
+*/
+#outra-ul li:nth-child(5) {
+    font-weight: bold;
+    background-color: blue;
+}
+
+/*
+O seletor corresponde a cada elemento que é o enésimo filho, de um tipo específico, de seu pai.:nth-of-type(n)
+
+n pode ser um número, uma palavra-chave ou uma fórmula.
+ */
+#outra-ul li:nth-of-type(7) {
+    font-weight: bold;
+    background-color: rgb(184, 2, 2);
+}
+
+/* 
+O seletor corresponde a cada elemento que é o enésimo filho, independentemente do tipo, de seu pai, contando a partir do último filho.:nth-last-child(n)
+
+n pode ser um número, uma palavra-chave ou uma fórmula.
+*/
+#outra-ul > li:nth-last-child(2) {
+    color: red;
+    font-style: italic;
+    list-style: none;
+}
+
+
+
+
+#terceira-lista {
+    margin: 0;
+    padding: 0;
+}
+
+#terceira-lista > li {
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+/* pares */
+#terceira-lista > li:nth-of-type(even) {
+    background-color: gray;
+    color: rgb(255, 255, 255);
+}
+
+/* inpares */
+#terceira-lista > li:nth-of-type(odd) {
+    background-color: aquamarine;
+    color: rgb(0, 0, 0);;
+}
