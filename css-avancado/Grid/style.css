@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+}
+
+.grid-container {
+    height: 700px;
+
+    padding: 16px;
+    background-color: darkgray;
+
+    display: grid;
+
+    grid-template-rows: auto auto;
+    grid-template-columns:auto auto auto;
+
+    /* align-items: center;
+    justify-items: center; */
+
+    justify-content: center;
+    align-content: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.r1 {
+    background-color: red;
+
+}
+
+.r2 {
+    background-color: green;
+
+}
+
+.r3 {
+    background-color: blue;
+
+}
+
+.react {
+
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+}
