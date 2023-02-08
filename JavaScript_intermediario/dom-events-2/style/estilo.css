@@ -35,9 +35,9 @@ img {
 button {
     display: block;
     padding: 10px;
-    background-color: crimson;
+    background-color: rgb(254, 254, 254);
     border: none;
-    color: #ffffff;
+    color: #000000;
     margin-top: 10px;
     cursor: pointer;
 }
