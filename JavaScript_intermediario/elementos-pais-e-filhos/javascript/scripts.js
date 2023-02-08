@@ -12,6 +12,7 @@ console.log('');
 console.log(segundaCaixaElement.children[0]);
 console.log(segundaCaixaElement.children[1]);
 
+console.log('');
 
 let arrayH1 = document.getElementsByTagName('h1');
 
@@ -36,6 +37,6 @@ let body = document.querySelector("#body");
 body.addEventListener("click", (e) => {
     let t = e.target;
 
-    alert(`Você clicou em <${t.tagName.toUpperCase()}>`)
+    alert(`Você clicou em <${t.tagName}>`)
 
 })
