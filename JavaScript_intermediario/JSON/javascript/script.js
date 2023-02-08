@@ -15,5 +15,5 @@ console.log(JSON.parse(a))
 
 let b = '{"Nome": "Hiago", "Nota": 10}';
 
-console.log(JSON.parse(b))
 console.log(JSON.stringify(b))
+console.log(JSON.parse(b))
