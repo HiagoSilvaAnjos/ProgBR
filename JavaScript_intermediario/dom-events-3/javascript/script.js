@@ -1,24 +1,18 @@
 let mudarElement = document.getElementById('chamarFunção');
-let modificarElement = document.getElementById('itemMod');
+let modificarElement = document.querySelector('.container');
 
 let estado = "sim"
 mudarElement.addEventListener('click', () => {
 
     if (estado === "sim") {
-        modificarElement.innerHTML = "Novo título";
-        modificarElement.style.backgroundColor = "crimson";
-        modificarElement.style.color = "white";
-        modificarElement.style.padding = "10px";
-        modificarElement.style.fontFamily = "arial";
-        modificarElement.style.borderRadius = "4px";
+        modificarElement.removeAttribute('class');
+        modificarElement.setAttribute('class', 'newAtributesDiv');
+        modificarElement.children[0].innerText = 'Novo estilo';
         estado = "nao";
     } else {
-        modificarElement.innerHTML = 'Título';
-        modificarElement.style.backgroundColor = "blue";
-        modificarElement.style.color = "black";
-        modificarElement.style.padding = "0px";
-        modificarElement.style.fontFamily = "serif";
-        modificarElement.style.borderRadius = "0px";
+        modificarElement.removeAttribute('class');
+        modificarElement.setAttribute('class', 'container');
+        modificarElement.children[0].innerText = 'Título';
         estado = "sim"
     }
 })
