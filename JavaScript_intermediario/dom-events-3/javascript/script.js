@@ -1,10 +1,10 @@
 let mudarElement = document.getElementById('chamarFunção');
-let modificarElement  = document.getElementById('itemMod');
+let modificarElement = document.getElementById('itemMod');
 
- let estado = "sim"
+let estado = "sim"
 mudarElement.addEventListener('click', () => {
-    
-    if(estado === "sim") {
+
+    if (estado === "sim") {
         modificarElement.innerHTML = "Novo título";
         modificarElement.style.backgroundColor = "crimson";
         modificarElement.style.color = "white";
