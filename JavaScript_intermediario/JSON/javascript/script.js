@@ -9,10 +9,6 @@ console.log(a)
 console.log(JSON.parse(a))
 
 
-
-
-
-
 let b = '{"Nome": "Hiago", "Nota": 10}';
 
 console.log(JSON.stringify(b))
