@@ -1,0 +1,62 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes changeColor {
+  0% {
+    left: 0rem;
+  }
+  100% {
+    left: 60rem;
+  }
+}
+
+.container {
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  margin: 1rem 0.5rem;
+  width: 13rem;
+  height: 13rem;
+  border: 0.3rem solid #000;
+  animation: changeColor 3s;
+  animation-fill-mode: forwards;
+}
+
+.div1 {
+  animation-timing-function: ease;
+}
+
+.div2 {
+  animation-timing-function: ease-in;
+}
+
+.div3 {
+  animation-timing-function: ease-out;
+}
+
+.div4 {
+  animation-timing-function: linear;
+}
+
+.div5 {
+  animation-timing-function: ease-in-out;
+}
+
+.text {
+  display: block;
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
