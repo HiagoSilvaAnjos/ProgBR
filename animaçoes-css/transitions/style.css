@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    margin: 20px 30px;
+    padding: 20px 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #101059;
+    border: none;
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+button:hover {
+    background-color: #5e5e8b;
+    padding: 30px 40px;
+}
