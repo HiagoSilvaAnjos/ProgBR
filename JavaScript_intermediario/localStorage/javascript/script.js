@@ -4,17 +4,19 @@ console.log('Hellow, World');
 localStorage.setItem("Nome", "Hiago");
 // localStorage.removeItem("Nome");
 
-let n = localStorage.getItem("Nome")
+let n = localStorage.getItem("Nome")    
 console.log(n)
 
 
 onload = function() {
 
-    let nomeElement = localStorage.getItem("content")
+    let nomeElement = localStorage.getItem("content");
+
+    console.log(nomeElement)
 
     let span = document.getElementById('content');
     span.innerHTML = nomeElement
-
+    
     span.style.display = 'block';
     span.style.color = '#FFF';
     span.style.borderRadius = '4px'
@@ -32,7 +34,6 @@ function atualizar(elemento) {
     let valor = elemento.value;
     console.log(valor);
 
-
     let span = document.getElementById('content');
     span.style.display = 'block';
     span.style.color = '#FFF';
@@ -48,9 +49,6 @@ function atualizar(elemento) {
     localStorage.setItem('content', valor);
 
 }
-
-
-
 
 /*
 localStorage.setItem() Precia passar dois argumentos
