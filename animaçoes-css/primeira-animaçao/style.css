@@ -1,34 +1,71 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes changeColor { 
+@keyframes changeColor {
+  10% {
+    background-color: #04253a;
+  }
+  30% {
+    background-color: #7b06c9;
+  }
+  50% {
+    background-color: #0aa01e;
+  }
+  75% {
+    background-color: #b8b20a;
+  }
+  100% {
+    background-color: #dc143c;
+  }
+}
 
-    from {
-        background-color: #06588b;
-    } to {
-        background-color: #0aa01e;
-    }
-
+@keyframes changeSpan {
+  10% {
+    background-color: #dc143c;
+  }
+  30% {
+    background-color: #b8b20a;
+  }
+  50% {
+    background-color: #0aa01e;
+  }
+  75% {
+    background-color: #7b06c9;
+  }
+  100% {
+    background-color: #04253a;
+  }
 }
 
 .container {
-    background-color: #2a282876;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
-    width: 20rem;
-    height: 20rem;
-    border: 0.3rem solid #000;
-    animation: changeColor 10s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20rem;
+  height: 20rem;
+  border: 0.3rem solid #000;
+  animation: changeColor 5s;
+}
+
+.box span {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid #000;
+  animation: changeSpan 5s;
 }
