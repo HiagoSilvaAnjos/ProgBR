@@ -2,43 +2,61 @@ let listUser = [
     {
         name: 'John',
     },
-    { 
+    {
         name: 'Igor',
     },
     {
         name: 'Neymar',
     },
-    {   
+    {
         name: 'Messi',
     }
 ]
 
-function createUser (nameUser) {
+function createUser(nameUser) {
 
     let newName = {
         name: nameUser
-    } 
-    
+    }
+
     return listUser.push(newName);
 }
 
-const insertUser = (newNameUser, callbackListUser) => {
+const insertUser = (newNameUser) => {
 
-    setTimeout(() => {
-        createUser(newNameUser)
-        callbackListUser();
-    }, 2000);
+    const promise = new Promise((resolve, reject) => {
 
+        setTimeout(() => {
+            createUser(newNameUser)
+            const alertError = false;
 
+            if (!alertError) {
+                resolve();
+            } else {
+                reject({msg: 'OPS...'});
+            }
+        }, 2000);
+
+    })
+
+    return promise
 }
 
 const imprimListUser = () => {
-    
-    for(i of listUser) {
+
+    for (i of listUser) {
         console.log(i.name);
     }
 
-
 }
 
-insertUser('Carlos', imprimListUser);
+const imprimError = (error) => {
+    console.log(error.msg);
+}
+
+async function execute () {
+   await insertUser('Hiago');
+   imprimListUser();
+}
+
+execute().catch(imprimError);
