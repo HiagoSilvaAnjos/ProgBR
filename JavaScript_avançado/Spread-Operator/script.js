@@ -1,5 +1,13 @@
-let arrayUser = ['Pessoa1', 'Pessoa2', 'Pessoa3', 'Pessoa4', 'Pessoa5', 'Pessoa6',];
-console.log(arrayUser);
+let user = {
+    name: 'NameDoUsuário',
+    age: 30
+};
 
-let copyArrayUser = [...arrayUser];
-console.log(copyArrayUser);
+let contact = {
+    telephone: 919999999,
+    email: 'NameDoUsuário@gmail.com',
+};
+
+const userData = {...user, ...contact}
+
+console.log(userData);
