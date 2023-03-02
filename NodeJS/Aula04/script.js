@@ -9,14 +9,15 @@
 [argOne, argTwo, ...rest] = process.argv;
 let fs = require('fs');
 
-let fileName = rest;
+let fileName = rest[0];
 fs.readFile(fileName, "UTF8", (err, data) => {
-    if (err) {throw 'Deu ruim'};
+    if (err) {throw 'Arquivo não encontrado'};
 
-    fs.writeFile(fileName + '-Upercase', data.toUpperCase, (err) => {
-        if (err) {throw "ops"};
+    fs.writeFile(fileName + '-Upercase', data.toUpperCase(), (err) => {
+        if (err) {throw err};
 
         console.log('Arquivo gerado com sucesso')
+        console.log(data)
     })
 
 })
