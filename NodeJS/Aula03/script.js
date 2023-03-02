@@ -1,5 +1,6 @@
-const sum = require('../Aula03/sum');
-const multiply = require('../Aula03/multiply');
+// FIXME: Módulos
+
+const calcOperator = require('./calc');
 
 [argOne, argTwo, ...rest] = process.argv;
 
@@ -11,8 +12,8 @@ const valueTwo = Number(rest[2]);
 if (symbolOperation !== 's') operation = 'Ivalid';
 if (symbolOperation !== 'm') operation = 'Ivalid';
 
-if (symbolOperation === 's') operation = sum(valueOne, valueTwo);
+if (symbolOperation === 's') operation = calcOperator.sum(valueOne, valueTwo);
 
-if (symbolOperation === 'm') operation = multiply(valueOne, valueTwo);
+if (symbolOperation === 'm') operation = calcOperator.multiply(valueOne, valueTwo);
 
 console.log(operation);
