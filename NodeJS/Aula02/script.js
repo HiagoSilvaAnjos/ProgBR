@@ -1,3 +1,5 @@
+//FIXME: Iserindo argumentos
+
 [argOne, argTwo, ...rest] = process.argv;
 
 let operation = '';
