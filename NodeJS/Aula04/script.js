@@ -10,9 +10,11 @@
 let fs = require('fs');
 
 let fileName = rest[0];
+    // ler um arquivo (readFile) - nome do arquivo - formato - callback (error, data) data = conteudo do arquivo (string)
 fs.readFile(fileName, "UTF8", (err, data) => {
     if (err) {throw 'Arquivo não encontrado'};
 
+    // criar arquivo (writeFile) - nome do arquivo - conteudo a ser adicionado - callcback que retorna um erro se houver.
     fs.writeFile(fileName + '-Upercase', data.toUpperCase(), (err) => {
         if (err) {throw err};
 
