@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <button onclick="get()">GET</button>
+    <button onclick="post()">POST</button>
+    <button onclick="put()">PUT</button>
+    <button onclick="del()">DELETE</button>
+
+    <script>
+
+        const url = 'http://localhost:3000/teste';
+
+        function get() {
+            fetch(url, {method: 'get'})
+            .then (response => console.log(response))
+            .catch(err => console.log(err));
+        }
+
+        function post() {
+            fetch(url, {method: 'post'})
+            .then (response => console.log(response))
+            .catch(err => console.log(err));
+        }
+
+        function put() {
+            fetch(url, {method: 'put'})
+            .then (response => console.log(response))
+            .catch(err => console.log(err));
+        }
+
+        function del() {
+            fetch(url, {method: 'delete'})
+            .then (response => console.log(response))
+            .catch(err => console.log(err));
+        }
+
+    </script>
+
+</body>
+</html>
