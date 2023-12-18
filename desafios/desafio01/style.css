@@ -1,0 +1,46 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.name {
+  padding: 25px 0px 25px 0px;
+}
+
+.dates {
+  padding: 0px 0px 25px 0px;
+}
+
+.goal {
+  padding: 20px 0px 20px 0px;
+}
+
+.goal p,
+.goal h2 {
+  padding: 10px 0px 10px 0px;
+}
+
+.dates-info {
+  padding: 20px 0px 60px 0px;
+}
+
+.formations h3 {
+  padding: 20px 0px 0px 0px;
+}
+
+.experiences {
+  padding: 20px 0px 60px 0px;
+}
+
+.experiences-infos {
+  padding: 20px 0px 0px 0px;
+}
+
+.experiences-infos .description-experience {
+  display: inline;
+}
+
+.stacks h2 {
+  padding: 0px 0px 30px 0px;
+}
